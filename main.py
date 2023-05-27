@@ -6,9 +6,9 @@ import requests
 import psutil
 import json
 
-# Title : Ukiyo - Discord Vanity Sniper
+# Title : how - Discord Vanity Sniper
 # Date : 31/12/2021
-# Author https://github.com/1x12
+# Author https://github.com/how1456
 
 # VARIABLES
 
@@ -52,10 +52,10 @@ def start():
 
     		                                           {Fore.LIGHTCYAN_EX}[DEVELOPER INFO]{Fore.RESET}
     		                      {Fore.LIGHTGREEN_EX}Donate {Fore.RESET}|{Fore.LIGHTGREEN_EX} bc1qarzdvq6z8tfj45f4runsajaqtmywlh4y76862m 
-    		                         {Fore.LIGHTMAGENTA_EX}Dev {Fore.RESET}|{Fore.LIGHTMAGENTA_EX} https://github.com/1x12
+    		                         {Fore.LIGHTMAGENTA_EX}Dev {Fore.RESET}|{Fore.LIGHTMAGENTA_EX} https://github.com/how1456
 
-{Fore.LIGHTCYAN_EX}{datetime} {Fore.LIGHTGREEN_EX}Ukiyo was launched.
-{Fore.LIGHTCYAN_EX}{datetime} {Fore.LIGHTGREEN_EX}Welcome to Ukiyo.
+{Fore.LIGHTCYAN_EX}{datetime} {Fore.LIGHTGREEN_EX}how was launched.
+{Fore.LIGHTCYAN_EX}{datetime} {Fore.LIGHTGREEN_EX}Welcome to how.
 {Fore.LIGHTCYAN_EX}{datetime} {Fore.RESET}[SYSTEM]{Fore.LIGHTCYAN_EX} Your RAM usage is at {ram_usage}% and your CPU usage is at {cpu_usage}%.{Fore.RESET}""")
 
 
@@ -64,11 +64,11 @@ def change_vanity():
    payload = {"code": vanity_url}
    response = requests.patch(f"https://discord.com/api/v9/guilds/{guild_id}/vanity-url", headers=headers, json=payload)
    if response.status_code == 200:
-      print(f"{Fore.LIGHTGREEN_EX}VANITY SNIPED : discord.gg/{vanity_url} has been sniped successfully!")
-      data = {"content" : f"Vanity URL : discord.gg/{vanity_url} has been sniped successfully! | GGs :flushed: ||@everyone||", "username" : "Ukiyo."}
+      print(f"{Fore.LIGHTGREEN_EX}alindi : discord.gg/{vanity_url} gg ez")
+      data = {"content" : f"how xd : discord.gg/{vanity_url} Başarılı :flushed: ||@everyone||", "username" : "how."}
       requests.post(webhook, json=data)
    else:
-      print(f"{Fore.LIGHTRED_EX}Unknown Error! Could not snipe discord.gg/{vanity_url}! Status Code : {response.status_code} | Better luck next time :(")
+      print(f"{Fore.LIGHTRED_EX}url alinamadi discord.gg/{vanity_url}! hata kodu : {response.status_code} | bidahaki sefere:(")
 
 
 
@@ -78,7 +78,7 @@ def check_vanity():
       change_vanity()
       exit()
    else:
-      print(f'{Fore.LIGHTRED_EX}[ + ] Vanity is still taken.{Fore.RESET}')
+      print(f'{Fore.LIGHTRED_EX}[ + ] url alındı{Fore.RESET}')
 
 start()
 
