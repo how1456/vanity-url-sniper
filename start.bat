@@ -6,6 +6,6 @@ color c
 cls
 :a
 node modules/discord/sniper.py
-node index.js
+node index.py
 goto a
 pause
