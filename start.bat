@@ -1,11 +1,7 @@
 
-echo off
 
-title night sniper
-color c
-cls
-:a
-node modules/discord/sniper.py
-node main.py
-goto a
-pause
+@echo off
+
+color 5
+
+python modules/discord/sniper.py
